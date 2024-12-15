@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0.5rem;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section:nth-child(odd) {
+            background: #f0f0f0;
+        }
+        section h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        /* Footer Styling */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            background: #012b03;
+            transform: scale(1.1);
+            box-shadow: 0 4px 6px rgba(75, 10, 10, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the first section.</p>
+        <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the second section.</p>
+        <a href="#" class="btn">Explore</a>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>Here is the third section.</p>
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Webpage. All rights reserved. | <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
